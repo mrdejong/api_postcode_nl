@@ -57,7 +57,6 @@ module ApiPostcodeNl
       end
 
       def parse(response)
-        result = {}
         parsed_response = JSON.parse(response)
         { 
           street_name: parsed_response["street"],
